@@ -1,1 +1,102 @@
-This file is created in GitNewBranch
+Step 1: Create a Project Folder
+mkdir BranchMergeDemo
+cd BranchMergeDemo
+Step 2: Initialize Git
+git init
+Step 3: Create a File
+echo "Welcome to Git" > README.md
+Step 4: Check Status
+git status
+Step 5: Stage the File
+git add README.md
+Step 6: Commit
+git commit -m "Initial commit"
+Step 7: View Branches
+git branch
+
+Output
+
+* main
+Step 8: Create a New Branch
+git branch feature
+
+Check branches
+
+git branch
+
+Output
+
+feature
+* main
+Step 9: Switch to Feature Branch
+git checkout feature
+
+or
+
+git switch feature
+
+Verify
+
+git branch
+
+Output
+
+* feature
+main
+Step 10: Modify the File
+
+Replace the contents of README.md with:
+
+Welcome to Git
+
+Feature Branch Added
+Step 11: Commit the Change
+git add README.md
+git commit -m "Added feature section"
+Step 12: Switch Back to Main
+git checkout main
+Step 13: Check File
+cat README.md
+
+Windows PowerShell
+
+Get-Content README.md
+
+Output
+
+Welcome to Git
+
+Notice that the feature change is not in the main branch.
+
+Step 14: Merge Feature Branch
+git merge feature
+
+Output
+
+Updating ...
+Fast-forward
+Step 15: Check File Again
+cat README.md
+
+Output
+
+Welcome to Git
+
+Feature Branch Added
+Step 16: View Commit History
+git log --oneline --graph
+
+Example
+
+* 5b6c7d8 Added feature section
+* 1a2b3c4 Initial commit
+Step 17: Delete the Feature Branch
+git branch -d feature
+
+Check branches
+
+git branch
+
+Output
+
+* main
