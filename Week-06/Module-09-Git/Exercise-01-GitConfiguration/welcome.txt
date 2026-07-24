@@ -1,1 +1,44 @@
-Welcome to Git
+Step 1: Check Git Installation
+git --version
+Step 2: Configure Username
+git config --global user.name "Your Name"
+Step 3: Configure Email
+git config --global user.email "your_email@example.com"
+Step 4: Set Default Branch Name
+git config --global init.defaultBranch main
+Step 5: Enable Colored Output
+git config --global color.ui auto
+Step 6: Verify Configuration
+git config --global user.name
+
+git config --global user.email
+
+git config --global init.defaultBranch
+
+git config --global --list
+
+Example Output
+
+user.name=Your Name
+user.email=your_email@example.com
+init.defaultbranch=main
+color.ui=auto
+Step 7: Create a File
+
+Create a file named welcome.txt
+
+Welcome to Git!
+Step 8: Initialize a Repository
+git init
+Step 9: Check Repository Status
+git status
+Step 10: Stage the File
+git add welcome.txt
+Step 11: Commit the File
+git commit -m "Completed Git Configuration Exercise"
+Step 12: View Commit History
+git log --oneline
+Folder Structure
+Exercise-01-GitConfiguration/
+│
+└── welcome.txt
